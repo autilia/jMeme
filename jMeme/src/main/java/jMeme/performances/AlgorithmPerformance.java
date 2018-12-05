@@ -242,7 +242,7 @@ public class AlgorithmPerformance implements Serializable {
 		v.put("Number of fitness evaluations",this.getNumberOfFitnessEvaluations());
 		v.put("Speed", this.getSpeed());
 		v.put("Time in ms",this.getTime());
-		v.put("Fitness Time in ms",this.getTimeFitnesses());
+		v.put("Approximate Fitness Time in ms",this.getTimeFitnesses());
 		v.put("Fitness value",this.getFitnessValue());
 		v.put("Average fitness",this.getAverageFitness());
 			
