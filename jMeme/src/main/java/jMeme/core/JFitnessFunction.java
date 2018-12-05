@@ -92,8 +92,9 @@ public class JFitnessFunction extends org.jgap.FitnessFunction {
 				
 			//fitness implemented by the user
 				
-				
+			//useful to compute the fitness time
 			long startTime=System.currentTimeMillis();
+			
 			double fitness=evalMethod.evaluate((Individual)individual);
 			
 			//added in the version jMeme 1.0.1
