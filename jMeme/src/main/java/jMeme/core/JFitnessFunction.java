@@ -91,7 +91,16 @@ public class JFitnessFunction extends org.jgap.FitnessFunction {
 					return reset_fitness;
 				
 			//fitness implemented by the user
-			return	evalMethod.evaluate((Individual)individual);
+				
+				
+			long startTime=System.currentTimeMillis();
+			double fitness=evalMethod.evaluate((Individual)individual);
+			
+			//added in the version jMeme 1.0.1
+			//set the time occurred to execute the single fitness evaluation
+			configuration.getPerformance().setTimeFitnesses(System.currentTimeMillis()-startTime);
+			
+			return	fitness;
 				
 	}
 	

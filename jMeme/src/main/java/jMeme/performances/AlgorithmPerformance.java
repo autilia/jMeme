@@ -89,7 +89,7 @@ public class AlgorithmPerformance implements Serializable {
 	/**
 	 * Stores the time in ms necessary to perform a fitness function
 	 */
-	protected double timeFitnesses;
+	protected long timeFitnesses;
 
 
 	
@@ -365,7 +365,7 @@ public class AlgorithmPerformance implements Serializable {
 
 
 
-	public double getTimeFitnesses() {
+	public long getTimeFitnesses() {
 	return timeFitnesses;
 }
 
@@ -393,7 +393,7 @@ public class AlgorithmPerformance implements Serializable {
 
 
 
-	public void setTimeFitnesses(double timeFitnesses) {
+	public void setTimeFitnesses(long timeFitnesses) {
 		this.timeFitnesses = timeFitnesses;
 	}
 
