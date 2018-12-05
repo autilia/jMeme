@@ -123,6 +123,9 @@ public class LocalOptimizationAlgorithm extends Algorithm{
 			solution=(Individual)localOptimizer.getBestSolution();
 			
 			performance.setIndividual(solution);
+			//add in version jMeme 1.1
+			performance.computeProblemPerformance(problem, solution);
+			
 			
 			System.out.println("number of iterations: "+performance.getNumberOfIterations());
 			
