@@ -123,7 +123,7 @@ public class LocalOptimizationAlgorithm extends Algorithm{
 			solution=(Individual)localOptimizer.getBestSolution();
 			
 			performance.setIndividual(solution);
-			//add in version jMeme 1.0.1
+			//added in the version jMeme 1.0.1
 			performance.computeProblemPerformance(problem, solution);
 			
 			
